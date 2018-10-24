@@ -2,7 +2,9 @@
   "pages": [
     "pages/index/index",
     "pages/logs/logs",
-    "pages/map/map"
+    "pages/map/map",
+    "pages/login/login",
+    "pages/waybills/waybills"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -14,12 +16,12 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/index/index",
-        "text": "首页"
+        "pagePath": "pages/login/login",
+        "text": "日志"
       },
       {
-        "pagePath": "pages/logs/logs",
-        "text": "日志"
+        "pagePath": "pages/index/index",
+        "text": "首页"
       }
     ]
   },
