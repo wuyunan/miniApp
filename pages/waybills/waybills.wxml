@@ -1,0 +1,4 @@
+<!--pages/waybills/waybills.wxml-->
+<view  wx:key="unique" wx:for="{{waybills}}" wx:for-item="waybill">
+  <waybill wx:key="{{waybill.waybillNum}}" waybillNum="{{waybill.waybillNum}}" status="{{waybill.statusText}}"></waybill>
+</view>

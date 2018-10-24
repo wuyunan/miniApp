@@ -1,0 +1,5 @@
+{
+  "usingComponents": {
+    "waybill": "/components/waybill/waybill"
+  }
+}

@@ -1,0 +1,49 @@
+<!--pages/login/login.wxml-->
+<view class="page">
+  <view wx:if="{{!isLogin}}">
+    <form bindsubmit="formSubmit" bindreset="formReset">
+      <view class="weui-cells__title">表单{{isLogin}}</view>
+      <view class="weui-cells weui-cells_after-title">
+
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">手机号</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请输入手机号" />
+          </view>
+          <view class="weui-cell__ft">
+            <button class="weui-vcode-btn" bindtap="getCode">获取验证码</button>
+          </view>
+        </view>
+
+
+        <view class="weui-cell weui-cell_input weui-cell_vcode">
+          <view class="weui-cell__hd">
+            <view class="weui-label">验证码</view>
+          </view>
+          <view class="weui-cell__bd">
+            <input class="weui-input" placeholder="请输入验证码" />
+          </view>
+          <view class="weui-cell__ft">
+
+          </view>
+        </view>
+      </view>
+      <view class="weui-btn-area">
+        <button class="weui-btn" type="primary" formType="submit">确定</button>
+      </view>
+    </form>
+  </view>
+  <view wx:else>
+    <view class="container">
+      <view class="userinfo">
+        <image bindtap="bindViewTap" class="userinfo-avatar" src="{{'https://dev.qingniu-chain.com'+userInfo.avatar.url}}" mode="cover"></image>
+        <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+      </view>
+      <view class="usermotto">
+        <text class="user-motto">手机: {{userInfo.mobile}}</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,7 @@
+/* components/waybill/waybill.wxss */
+.waybillNum{
+  color: "#999999"
+}
+.waybill {
+  
+}
