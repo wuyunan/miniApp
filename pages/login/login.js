@@ -80,6 +80,10 @@ Page({
           key: "token",
           data: res.token
         })
+        this.setData({
+          isLogin: wx.getStorageSync("token") !== "",
+          userInfo: wx.getStorageSync("user_info") 
+        })
       })
       .catch(res => {
 

@@ -4,7 +4,9 @@
     "pages/logs/logs",
     "pages/map/map",
     "pages/login/login",
-    "pages/waybills/waybills"
+    "pages/waybills/waybills",
+    "pages/plannedorder/plannedorder",
+    "pages/waybills/waybillInfo"
   ],
   "window": {
     "backgroundTextStyle": "light",
