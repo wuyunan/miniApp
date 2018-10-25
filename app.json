@@ -18,7 +18,7 @@
   "tabBar": {
     "list": [
       {
-        "pagePath": "pages/login/login",
+        "pagePath": "pages/waybills/waybills",
         "text": "日志"
       },
       {

@@ -1,6 +1,15 @@
 <!--components/waybill/waybill.wxml-->
 <view class="weui-cell">
-  <text class="waybillNum">运单号: {{waybillNum}}</text>
-   <text class="waybillNum">状态: {{status}}</text>
+
+  <view class="weui-cell header">
+    <text class="waybill-num">运单号: {{waybillNum}}</text>
+    <text class="waybillNum">状态: {{status}}</text>
+  </view>
+  <view class="weui-cell waybill">
+
+  </view>
+  <view class="weui-cell footer">
+
+  </view>
 </view>
 <slot></slot>

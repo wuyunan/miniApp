@@ -1,7 +1,11 @@
 /* components/waybill/waybill.wxss */
-.waybillNum{
-  color: "#999999"
+page {
+  background-color: white
 }
+.waybill-num {
+  color: #666666;
+}
+
 .waybill {
-  
+  height: 80rpx;
 }

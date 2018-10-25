@@ -83,7 +83,11 @@ Page({
   onShareAppMessage: function() {
 
   },
-  onWaybillClick: function() {
-
+  onWaybillClick: function(e) {
+    console.log(e.currentTarget)
+    wx.navigateTo({
+      url: "/pages/waybills/waybillInfo?id=" + e.currentTarget.dataset.id
+    })
   }
+
 })

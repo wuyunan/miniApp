@@ -1,4 +1,6 @@
 <!--pages/waybills/waybills.wxml-->
-<view  wx:key="unique" wx:for="{{waybills}}" wx:for-item="waybill">
-  <waybill wx:key="{{waybill.waybillNum}}" waybillNum="{{waybill.waybillNum}}" status="{{waybill.statusText}}"></waybill>
+<view>
+  <block wx:key="unique" wx:for="{{waybills}}" wx:for-item="waybill">
+    <waybill bindtap="onWaybillClick" wx:key="{{waybill.waybillNum}}" waybillNum="{{waybill.waybillNum}}" status="{{waybill.statusText}}" data-id="{{waybill.id}}"></waybill>
+  </block>
 </view>
